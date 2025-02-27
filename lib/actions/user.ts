@@ -19,7 +19,7 @@ export async function signInWithCredentials(
     });
 
     const response=await signIn('credentials', user);
-    console.log({response})
+    
 
     return { success: true, message: 'Signed in successfully' };
   } catch (error) {

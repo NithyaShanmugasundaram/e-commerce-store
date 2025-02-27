@@ -25,7 +25,7 @@ const SignUpPage = async (props: {
   const { callbackUrl } = await props.searchParams;
 
   const session = await auth();
-  console.log({ session });
+ 
 
   if (session) {
     return redirect(callbackUrl || '/');

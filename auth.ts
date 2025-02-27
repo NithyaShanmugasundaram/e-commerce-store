@@ -64,7 +64,7 @@ export const config = {
       if (trigger === 'update') {
         session.user.name = user.name;
       }
-      console.log({ session });
+    
       return session;
     },
     async jwt({ token, user, trigger, session }: any) {
@@ -83,7 +83,7 @@ export const config = {
           });
         }
       }
-      console.log({ token });
+   
       return token;
     },
   },
